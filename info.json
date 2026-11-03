@@ -1,0 +1,10 @@
+{
+    "name": "SyncsToolkit",
+    "type": "script",
+    "author": "Sync",
+    "version": "3.2.0",
+    "dependencies": ["ModSettings:1.0.2"],
+
+    "game": "MSM2",
+    "format_version": 1
+}
