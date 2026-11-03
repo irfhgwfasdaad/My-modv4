@@ -1,0 +1,17 @@
+name: Build Sync's Toolkit
+on:
+  push:
+  workflow_dispatch:
+jobs:
+  build:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build SyncsToolkit.script
+        shell: pwsh
+        run: ./build.ps1
+      - name: Upload the finished script
+        uses: actions/upload-artifact@v4
+        with:
+          name: SyncsToolkit
+          path: SyncsToolkit.script
